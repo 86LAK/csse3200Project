@@ -1,4 +1,4 @@
-# UQ 2023 Studio 1 - Gardens of the Galaxy
+# Gardens of the Galaxy
 
 86LAK
 #3 86LAK
