@@ -17,14 +17,6 @@ jobs:
         with:
           java-version: '17'
 
-      # SonarCloud Integration
-      - name: Cache SonarCloud packages
-        uses: actions/cache@v1
-        with:
-          path: ~/.sonar/cache
-          key: ${{ runner.os }}-sonar
-          restore-keys: ${{ runner.os }}-sonar
-
       - name: Cache Gradle packages
         uses: actions/cache@v1
         with:
@@ -52,10 +44,3 @@ jobs:
           title: "Latest Build of Game"
           files: |
             ./source/desktop/build/libs/*.jar 
-
-#      - name: Analyse
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
-#          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-#          GRADLE_DIR: 'source' # Modify this to wherever './gradlew' is
-#        run: ./gradlew sonarqube --info
