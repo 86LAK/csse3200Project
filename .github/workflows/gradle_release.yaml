@@ -24,17 +24,6 @@ jobs:
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}
           restore-keys: ${{ runner.os }}-gradle
 
-      - name: Build and Analyse Game
-        run: |
-          cd $GRADLE_DIR
-          chmod +x ./gradlew
-          ./gradlew --stacktrace build sonarqube --info
-          ls -al
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          GRADLE_DIR: 'source' # Modify this to wherever './gradlew' is
-
       - name: Automatic Release # note the path for the files on this one
         uses: marvinpinto/action-automatic-releases@v1.2.1
         with:
