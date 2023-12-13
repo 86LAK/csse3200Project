@@ -5,6 +5,7 @@
 228 commits    5,918 ++    3,877 --
 
 
+
 ## Welcome
 
 Gardens of the Galaxy is a futuristic space farming game. It has been transformed from a barebones game-engine to a fully fledged space farming game, with limitless potential.
@@ -23,6 +24,52 @@ To get started with the game, please follow the outline provided [here](https://
 - [Storyline](https://github.com/UQcsse3200/2023-studio-1/wiki/Storyline)
 - [Game Quests](https://github.com/UQcsse3200/2023-studio-1/wiki/Game-Quests)
 - [Game Wiki](https://github.com/UQcsse3200/2023-studio-1/wiki)
+
+
+# Playing the Game
+
+To play the game, follow these steps:
+
+## Prerequisites
+
+Make sure you have the following installed on your system:
+
+- [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase-jdk17-downloads.html) version 17 or later.
+
+## Steps
+
+1. **Download the JAR:**
+   - Download the latest release JAR file from the [Releases](https://github.com/your-username/your-repo/releases) page.
+
+2. **Open a Terminal or Command Prompt:**
+   - Open a terminal or command prompt on your machine.
+
+3. **Navigate to the JAR Location:**
+   - Use the `cd` command to navigate to the directory where you downloaded the JAR file.
+
+    ```bash
+    cd path/to/downloaded/jar
+    ```
+
+4. **Run the JAR:**
+   - Execute the following command to run the game.
+
+    ```bash
+    java -jar your-game.jar
+    ```
+
+   Replace `your-game.jar` with the actual name of the JAR file.
+
+5. **Play the Game:**
+   - The game should launch, and you can now enjoy playing!
+
+## Troubleshooting
+
+- If you encounter any issues, ensure that you have JDK 17 or later installed. You can check your Java version using:
+
+  ```bash
+  java -version
+  
 
 ## Game Engine Description
 
